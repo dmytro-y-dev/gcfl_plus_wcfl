@@ -4,7 +4,7 @@
 Author: metamaker
 
 This library provides framework over Win32 API to create GUI applications under Windows. It is only
-an example how such framework could be built and isn't intended to be used by anyone.
+an example of how such framework could be built and isn't intended to be used by anyone.
 
 Building the library
 --------------------
@@ -22,7 +22,7 @@ next:
 Usage examples
 --------------
 
-See the WCFL/samples folder for GUI application example and GCFL/samples folder for console application.
+See the WCFL/samples folder for GUI application example, GCFL/samples folder for console application.
     
 License agreement
 -----------------
