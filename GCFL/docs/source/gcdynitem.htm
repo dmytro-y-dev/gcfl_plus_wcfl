@@ -1,0 +1,28 @@
+<html>
+<head>
+<LINK rel="stylesheet" href="style.css">
+<title>GCFL - gcDynItem class</title>
+</head>
+<script Language="JavaScript" SRC="header.js"></script>
+<!--НАЧАЛО БЛОКА НАСТОЯЩЕГО ОПИСАНИЯ-->
+<tr><td class="head"><img src="class.gif" style="vertical-align: bottom;"> Вспомогательный класс - gcDynItem</td></tr>
+<tr><td class="clshead" style="font-weight: normal;"><b>Предки:</b> gcObject</td></tr>
+<tr><td class="clsmethods"><b>Методы и конструкторы класса:</b><br>
+- gcDynItem(gcDynItem<objClass> *itmPrev, const bool &bAutoRemove) - Конструктор с указанием параметров<br>
+- gcDynItem<objClass> * GetNext(void) - Получить указатель на следующий элемент списка<br>
+- gcDynItem<objClass> * GetPrev(void) - Получить указатель на предыдущий элемент списка<br>
+- uint32 GetIndex(void) - получить номер индекса элемента в связном списке<br>
+- void SwapWithNext(void) - поменять следующий и текущий элементы местами в списке<br>
+- void SwapWithPrev(void) - поменять предыдущий и текущий элементы местами в списке
+</td></tr>
+<tr><td class="clsmethods"><b>Члены класса:</b><br>
+- <b>objClass *</b> Content - Указатель на присвоенный объект<br>
+</td></tr>
+<tr><td class="content">
+Вспомогательный класc для класса <b>gcDynList</b>. Используется для хранения указателя на объект, а также указателя на следующий и предидущий элементы связного списка.
+</td></tr>
+<tr><td class="content">
+Заголовок: <b>gclist.h</b></td></tr>
+<!--КОНЕЦ БЛОКА НАСТОЯЩЕГО ОПИСАНИЯ-->
+<script Language="JavaScript" SRC="footer.js"></script>
+</html>

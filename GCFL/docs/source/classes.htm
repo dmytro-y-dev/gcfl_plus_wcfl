@@ -1,0 +1,143 @@
+<html>
+<head>
+<LINK rel="stylesheet" href="style.css">
+<title>GCFL - Библиотека Основных Классов и Функций</title>
+</head>
+<script Language="JavaScript" SRC="header.js"></script>
+<!--НАЧАЛО БЛОКА НАСТОЯЩЕГО ОПИСАНИЯ-->
+<tr><td class="content">
+<b>Классы:</b><br>
+- <a href="gcobject.htm">gcObject</a><br>
+- <a href="gcconfigitem.htm">gcConfigItem</a><br>
+- <a href="gcconfig.htm">gcConfig</a><br>
+- <a href="gccmdparam.htm">gcCmdParam</a><br> 
+- <a href="gccmdparser.htm">gcCmdParser</a><br>
+- <a href="gcdynitem.htm">gcDynItem</a><br>
+- <a href="gcdynlist.htm">gcDynList&lt;typename&gt;</a><br>
+- <a href="gcstring.htm">gcString</a><br>
+- <a href="gcstrlist.htm">gcStrList</a><br><br>
+
+<b>Типы:</b>
+<table style="width: 99%;">
+<tr>
+<td class="content" style="width: 150px; background-color: #FFFFFF">Название типа</td>
+<td class="content" style="background-color: #FFFFFF">Описание</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">uint8</td>
+<td class="content">целое беззнаковое 8-битное число</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">uint16</td>
+<td class="content">целое беззнаковое 16-битное число</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">uint32</td>
+<td class="content">целое беззнаковое 32-битное число</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">uint</td>
+<td class="content">целое беззнаковое 32-битное число</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">uint64</td>
+<td class="content">целое беззнаковое 64-битное число</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">int8</td>
+<td class="content">целое 8-битное число со знаком</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">int16</td>
+<td class="content">целое 16-битное число со знаком</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">int32</td>
+<td class="content">целое 32-битное число со знаком</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">int64</td>
+<td class="content">целое 64-битное число со знаком</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">LPSTR</td>
+<td class="content">указатель на строку</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">LPCSTR</td>
+<td class="content">указатель на константную строку</td>
+</tr>
+</table>
+
+<br><b>Константы:</b>
+<table style="width: 99%;">
+<tr>
+<td class="content" style="width: 150px; background-color: #FFFFFF">Название константы</td>
+<td class="content" style="background-color: #FFFFFF">Описание</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">MAX_INT8</td>
+<td class="content">максимальное значение целого 8-битного числа со знаком</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">MAX_INT16</td>
+<td class="content">максимальное значение целого 16-битного числа со знаком</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">MAX_INT32</td>
+<td class="content">максимальное значение целого 32-битного числа со знаком</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">MIN_INT8</td>
+<td class="content">минимальное значение целого 8-битного числа со знаком</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">MIN_INT16</td>
+<td class="content">минимальное значение целого 16-битного числа со знаком</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">MIN_INT32</td>
+<td class="content">минимальное значение целого 32-битного числа со знаком</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">MAX_UINT8</td>
+<td class="content">максимальное значение целого беззнакового 8-битного числа</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">MAX_UINT16</td>
+<td class="content">максимальное значение целого беззнакового 16-битного числа</td>
+</tr>
+
+<tr>
+<td class="content" style="width: 150px;">MAX_UINT32</td>
+<td class="content">максимальное значение целого беззнакового 32-битного числа</td>
+</tr>
+</table>
+<br>
+Классы бывают <b>трех</b> типов: базовые, вспомогательные и рабочие.<br><br>
+<i>Базовый класс</i> - это класс, который является самым первым для какой-либо ветви классов. Класс <b>gcObject</b> является базовым классом для всех остальных классов <b>GCFL</b><br><br>
+<i>Вспомогательный класс</i> - это класс, который <u>не</u> закладывает основу для других классов. Примером такого класса являются <b>gcConfigItem</b> и <b>gcDynItem</b>. В отличии от базовых классов, эти классы не закладывают основу для развития других классов, т.е. не предусматривают дальнейшее наследование и полиморфизм, и являются самодостаточными классами.<br><br>
+<i>Рабочий класс</i> - это класс, который дает программисту выполнять определенные операции (например, считать/записать файлы определенных форматов).
+</td></tr>
+<!--КОНЕЦ БЛОКА НАСТОЯЩЕГО ОПИСАНИЯ-->
+<script Language="JavaScript" SRC="footer.js"></script>
+</html>

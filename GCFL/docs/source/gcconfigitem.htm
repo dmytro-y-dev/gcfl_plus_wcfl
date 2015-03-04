@@ -1,0 +1,27 @@
+<html>
+<head>
+<LINK rel="stylesheet" href="style.css">
+<title>GCFL - gcConfigItem class</title>
+</head>
+<script Language="JavaScript" SRC="header.js"></script>
+<!--НАЧАЛО БЛОКА НАСТОЯЩЕГО ОПИСАНИЯ-->
+<tr><td class="head"><img src="class.gif" style="vertical-align: bottom;"> Вспомогательный класс - gcConfigItem</td></tr>
+<tr><td class="clshead" style="font-weight: normal;"><b>Предки:</b> gcObject</td></tr>
+<tr><td class="clsmethods"><b>Методы и конструкторы класса:</b><br>
+- gcConfigItem(gcString sName, gcString sValue) - Конструктор с указанием параметров<br>
+- void CleanName() - Удалить все пробелы, табы и т.п. из имени параметра.<br>
+- void CleanValue() - Удалить все пробелы, табы и т.п. из значения параметра<br>
+- void CleanStr(gcString &str) - Удалить все пробелы, табы и т.п. из определенной строки
+</td></tr>
+<tr><td class="clsmethods"><b>Члены класса:</b><br>
+- <b>gcString</b> Name - Название параметра<br>
+- <b>gcString</b> Value - Значение параметра
+</td></tr>
+<tr><td class="content">
+Вспомогательный класc для класса <b>gcConfig</b>. Используется для хранения имени и значения параметра конфигурации. Один элемент - один параметр - один объект gcConfigItem.
+</td></tr>
+<tr><td class="content">
+Заголовок: <b>gcconfig.h</b></td></tr>
+<!--КОНЕЦ БЛОКА НАСТОЯЩЕГО ОПИСАНИЯ-->
+<script Language="JavaScript" SRC="footer.js"></script>
+</html>

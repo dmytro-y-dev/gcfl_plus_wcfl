@@ -1,0 +1,28 @@
+<html>
+<head>
+<LINK rel="stylesheet" href="style.css">
+<title>GCFL - Библиотека Основных Классов и Функций</title>
+</head>
+<script Language="JavaScript" SRC="header.js"></script>
+<!--НАЧАЛО БЛОКА НАСТОЯЩЕГО ОПИСАНИЯ-->
+<tr><td class="content">
+<!--ФУНКЦИИ-->
+<b>Функции:</b><br><br>
+<b>bool</b> GetBit8(const uint8 &Number, const uint8 &BitPosition) - <i>Узнать значение бита для 8-битного числа. Индекс битов начинается с 0 и идет от младшего к старшему. Возвращает значение бита.</i><br><br>
+<b>bool</b> SetBit8(uint8 &Number, const uint8 &BitPosition, const bool &Value) - <i>Задать значение бита для 8-битного числа. Индекс битов начинается с 0 и идет от младшего к старшему. При ошибке операции возвращает <b>false</b>.</i><br><br>
+<b>bool</b> GetBit16(const uint16 &Number, const uint8 &BitPosition) - <i>Узнать значение бита для 16-битного числа. Индекс битов начинается с 0 и идет от младшего к старшему. Возвращает значение бита.</i><br><br>
+<b>bool</b> SetBit16(uint16 &Number, const uint8 &BitPosition, const bool &Value) - <i>Задать значение бита для 16-битного числа. Индекс битов начинается с 0 и идет от младшего к старшему. При ошибке операции возвращает <b>false</b>.</i><br><br>
+<b>bool</b> GetBit32(const uint32 &Number, const uint8 &BitPosition) - <i>Узнать значение бита для 32-битного числа. Индекс битов начинается с 0 и идет от младшего к старшему. Возвращает значение бита.</i><br><br>
+<b>bool</b> SetBit32(uint32 &Number, const uint8 &BitPosition, const bool &Value) - <i>Задать значение бита для 32-битного числа. Индекс битов начинается с 0 и идет от младшего к старшему. При ошибке операции возвращает <b>false</b>.</i><br><br>
+<!--МАКРОСЫ-->
+<b>Макросы:</b><br><br>
+<b>DEFINE_DEFAULT_EVENT(Event)</b> - <i>Задать событие по умолчанию (если нету ни одного события для введенной пользователем комманды) для <b>gcCmdParser</b>.</i><br><br>
+<b>BEGIN_EVENTS_TABLE()</b> - <i>Начать таблицу событий (должно быть вызвано сразу перед добавкой событий в <b>gcCmdParser</b>. Может вызываться лишь 1 раз!).</i><br><br>
+<b>DEFINE_EVENT(Event, Command)</b> - <i>Задать событие на комманду <b>Command</b> (простая <b>LPCSTR</b> строка), вводимую пользователем.</i><br><br>
+<b>END_EVENTS_TABLE()</b> - <i>Завершить таблицу событий (должно быть вызвано сразу после добавки всех событий в <b>gcCmdParser</b>).</i><br><br>
+<b>INIT_DEFAULT_PARSER()</b> - <i>Инициализировать парсер коммандной строки по умолчанию (обязательный вызов, если желаете использовать <b>gcCmdParser</b>).</i><br><br>
+<i>Вместо <b>Event</b> подставляется название функции <b>Func</b> вида <b>void Func(gcCmdParser &Parser)</b></i>
+</td></tr>
+<!--КОНЕЦ БЛОКА НАСТОЯЩЕГО ОПИСАНИЯ-->
+<script Language="JavaScript" SRC="footer.js"></script>
+</html>

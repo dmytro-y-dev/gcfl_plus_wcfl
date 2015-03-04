@@ -1,0 +1,26 @@
+<html>
+<head>
+<LINK rel="stylesheet" href="style.css">
+<title>GCFL - gcCmdParser class</title>
+</head>
+<script Language="JavaScript" SRC="header.js"></script>
+<!--НАЧАЛО БЛОКА НАСТОЯЩЕГО ОПИСАНИЯ-->
+<tr><td class="head"><img src="class.gif" style="vertical-align: bottom;"> Рабочий класс - gcCmdParser</td></tr>
+<tr><td class="clshead" style="font-weight: normal;"><b>Предки:</b> gcObject</td></tr>
+<tr><td class="clsmethods"><b>Методы и конструкторы класса:</b><br>
+- <b>void</b> ParseCmdLine(gcString &sCmdLine, const uint16 &uParseFrom) - <i>"Пропарсить" коммандную строку sCmdLine начиная с uParseFrom-символа.</i><br><br>
+- <b>bool</b> IsParamExists(gcString &sParamName) - <i>Проверяет, существует-ли параметр с именем sParamName.</i><br><br>
+- <b>gcString</b> GetValue(const uint16 &uParamID) - <i>Возвращает значение параметра под индексом uParamID.</i><br><br>
+- <b>gcString</b> GetParam(const uint16 &uParamID) - <i>Возвращает название параметра под индексом uParamID.</i><br><br>
+- <b>gcString</b> GetValue(gcString &sParamName) - <i>Возвращает значение параметра c именем sParamName.</i><br><br>
+- <b>gcString</b> GetCommand() - <i>Возвращает комманду, применяемую к параметрам.</i><br>
+- <b>uint16</b> GetParamsCount() - <i>Возвращает кол. параметров коммандной строки.</i>
+</td></tr>
+<tr><td class="content">
+Парсер коммандной строки. В реальных условиях (создание меню коммандной строки) можно использовать только лишь воспользовавшись спец. макросами.<b>
+</td></tr>
+<tr><td class="content">
+Заголовок: <b>gccmdparser.h</b></td></tr>
+<!--КОНЕЦ БЛОКА НАСТОЯЩЕГО ОПИСАНИЯ-->
+<script Language="JavaScript" SRC="footer.js"></script>
+</html>

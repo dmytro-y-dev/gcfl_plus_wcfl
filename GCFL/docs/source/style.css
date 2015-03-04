@@ -1,0 +1,141 @@
+/*Стили ссылок*/
+
+a.menu:link {
+	text-decoration: none;
+	color: #000000;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
+
+a.menu:active {
+	text-decoration: none;
+	color: #000000;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
+
+a.menu:visited {
+	text-decoration: none;
+	color: #000000;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
+
+a.menu:hover {
+	text-decoration: underline;
+	color: #8800ff;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
+
+body {
+	background-image: url("bgmain.gif");
+}
+
+td.menu {
+	border: #aaaaaa solid 1px;
+	background-color: #ffffaa;
+	padding-left: 5px;
+	padding-bottom: 3px;
+}
+
+td.clshead {
+	border: #aaaaaa solid 1px;
+	background-color: #ddff66;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: bold;
+	font-variant: normal;
+	font-style: normal;
+}
+
+td.clsmethods {
+	border: #aaaaaa solid 1px;
+	background-color: #ffffaa;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
+
+td.clsmethods a:link {
+	text-decoration: none;
+	color: #000000;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
+
+td.clsmethods a:active {
+	text-decoration: none;
+	color: #000000;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
+
+td.clsmethods a:visited {
+	text-decoration: none;
+	color: #000000;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
+
+td.clsmethods a:hover {
+	text-decoration: underline;
+	color: #8800ff;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
+
+td.head {
+	border: #aaaaaa solid 1px;
+	background-color: #5555ff;
+	color: #ffffff;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: bold;
+	font-variant: normal;
+	font-style: normal;
+}
+
+td.content {
+	border: #aaaaaa solid 1px;
+	background-color: #ffffaa;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	font-family: tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
